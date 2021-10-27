@@ -9,8 +9,8 @@ testnet_kwargs = {
     "SUB_SLOT_ITERS_STARTING": 2 ** 27,
     # DIFFICULTY_STARTING is the starting difficulty for the first epoch, which is then further
     # multiplied by another factor of DIFFICULTY_CONSTANT_FACTOR, to be used in the VDF iter calculation formula.
-    "DIFFICULTY_CONSTANT_FACTOR": 2 ** 57,
-    "DIFFICULTY_STARTING": 7,
+    "DIFFICULTY_CONSTANT_FACTOR": 2 ** 64,
+    "DIFFICULTY_STARTING": 4,
     "DIFFICULTY_CHANGE_MAX_FACTOR": 3,  # The next difficulty is truncated to range [prev / FACTOR, prev * FACTOR]
     # These 3 constants must be changed at the same time
     "SUB_EPOCH_BLOCKS": 384,  # The number of blocks per sub-epoch, mainnet 384
@@ -27,14 +27,17 @@ testnet_kwargs = {
     # Used as the initial cc rc challenges, as well as first block back pointers, and first SES back pointer
     # We override this value based on the chain being run (testnet0, testnet1, mainnet, etc)
     # Default used for tests is std_hash(b'')
-    "GENESIS_CHALLENGE": bytes.fromhex("a863ac9871ebeaf1fdc7ed6acd3d5c8c39441d53187a936868c87e1e233a3819"),
-    # Forks of chia should change this value to provide replay attack protection. This is set to mainnet genesis chall
-    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("ecbf4458b47e39c60afec66e245fccb042871417ffc5200cb0140346c2e044d0"),
+    "GENESIS_CHALLENGE": bytes.fromhex("22292ead3078470dbb4a4978c3757f1ff2bd5b14e4ee3af8fe246e67d6fb4130"),
+    # Forks of melon should change this value to provide replay attack protection. This is set to mainnet genesis chall
+    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("c093d9d15164df3859abb049136f84456ece91d373dd3ca4e1cd1595632763f1"),
     "GENESIS_PRE_FARM_POOL_PUZZLE_HASH": bytes.fromhex(
-        "d819c28786af76b7977b1f941d8f48e0d74bd6b89ccc4d1471b6be8430186c3a"
+        "29850435fc5af0251eb3e1892a0a693b24b3bc6d9427b6b9f4e3a2178b4d98f6"
     ),
     "GENESIS_PRE_FARM_FARMER_PUZZLE_HASH": bytes.fromhex(
-        "d819c28786af76b7977b1f941d8f48e0d74bd6b89ccc4d1471b6be8430186c3a"
+        "29850435fc5af0251eb3e1892a0a693b24b3bc6d9427b6b9f4e3a2178b4d98f6"
+    ),
+    "GENESIS_PRE_FARM_ELONWALLET_PUZZLE_HASH": bytes.fromhex(
+        "4558650de2a4ad95aa621acbbffcf24e8f2dc7ccc0a088c213b5fa8b4a275742"
     ),
     "MAX_VDF_WITNESS_SIZE": 64,
     # Size of mempool = 50x the size of block
@@ -53,10 +56,6 @@ testnet_kwargs = {
     "MAX_GENERATOR_SIZE": 1000000,
     "MAX_GENERATOR_REF_LIST_SIZE": 512,  # Number of references allowed in the block generator ref list
     "POOL_SUB_SLOT_ITERS": 37600000000,  # iters limit * NUM_SPS
-    # hardfork block of rewarding change.
-    "HF_BLOCK_REWARD": -1,
-    # hardfork block of staking change.
-    "HF_BLOCK_STAKING": -1,
 }
 
 
