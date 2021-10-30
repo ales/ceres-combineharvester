@@ -22,8 +22,11 @@ farmer_machine:
     - venidium
     - goldcoin
     - aedgecoin
-    - melon
     - kujenga
+    - btcgreen
+    - cryptodoge
+    - maize
+    - skynet
 plot_directories:
 - /mnt/sda
 - /mnt/sdb
@@ -89,11 +92,8 @@ coin_names:
 - venidium
 - goldcoin
 - aedgecoin
-- melon
 - kujenga
 network_ids:
-  melon:
-    network_id: mainnet
   kujenga:
     network_id: mainnet
   chia:
