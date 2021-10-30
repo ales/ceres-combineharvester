@@ -93,6 +93,7 @@ coin_names:
 - goldcoin
 - aedgecoin
 - kujenga
+- skynet
 network_ids:
   kujenga:
     network_id: mainnet
@@ -189,4 +190,4 @@ network_ids:
   aedgecoin:
     network_id: mainnet
   skynet:
-    network_id: testnet_09
+    network_id: mainnet
