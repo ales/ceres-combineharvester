@@ -5,7 +5,7 @@ farmer_machine:
     #- chia
     - flax
     - spare
-    - silicoin
+    #- silicoin
     - flora
     - socks
     - greendoge
