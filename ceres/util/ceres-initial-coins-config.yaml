@@ -27,24 +27,9 @@ farmer_machine:
     - cryptodoge
     - maize
     - skynet
-plot_directories:
-- /mnt/sda
-- /mnt/sdb
-- /mnt/sdc
-- /mnt/sdd
-- /mnt/sde
-- /mnt/sdf
-- /mnt/sdg
-- /mnt/sdh
-- /mnt/sdi
-- /mnt/sdj
-- /mnt/sdk
-- /mnt/sdl
-- /mnt/sdm
-- /mnt/sdn
-- /mnt/sdo
-- /mnt/sdp
-- /mnt/sdq
+    - wheat
+    - pipscoin
+    - salvia
 coin_names:
 - chia
 - flax
@@ -191,3 +176,6 @@ network_ids:
     network_id: mainnet
   skynet:
     network_id: mainnet
+
+plot_directories:
+#- /mnt/sda
