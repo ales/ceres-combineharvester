@@ -30,6 +30,8 @@ farmer_machine:
     - wheat
     - pipscoin
     - salvia
+    - skynet
+#    - seno
 coin_names:
 - chia
 - flax
@@ -79,7 +81,10 @@ coin_names:
 - aedgecoin
 - kujenga
 - skynet
+- seno
 network_ids:
+  seno:
+    network_id: mainnet
   kujenga:
     network_id: mainnet
   chia:
