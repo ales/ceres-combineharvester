@@ -30,7 +30,6 @@ farmer_machine:
     - wheat
     - pipscoin
     - salvia
-    - skynet
 #    - seno
 coin_names:
 - chia
