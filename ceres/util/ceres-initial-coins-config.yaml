@@ -82,8 +82,11 @@ coin_names:
 - skynet
 - seno
 - rolls
-- ethgreen
+#- ethgreen
+- shibgreen
 network_ids:
+  shibgreen:
+    network_id: mainnet
   rolls:
     network_id: mainnet
   ethgreen:
