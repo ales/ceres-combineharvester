@@ -81,7 +81,13 @@ coin_names:
 - kujenga
 - skynet
 - seno
+- rolls
+- ethgreen
 network_ids:
+  rolls:
+    network_id: mainnet
+  ethgreen:
+    network_id: mainnet
   seno:
     network_id: mainnet
   kujenga:
